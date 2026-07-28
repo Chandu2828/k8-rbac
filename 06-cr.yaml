@@ -1,0 +1,14 @@
+apiVersion: rbac.authorization.k8s.io/v1 
+kind: ClusterROle
+metadata:
+  name: devops-tls 
+rules:
+- apiGroups: [""]
+  resources: ["nodes"]
+  verbs: ["get", "watch", "list"]
+- apiGroups: [""]
+  resources: ["presistentvolumes"]
+  verbs: ["get", "watch", "list"]
+- apiGroups: ["storage.k8s.io"]
+  resources: ["storageclasses"]
+  verbs: ["get", "watch", "list"]
