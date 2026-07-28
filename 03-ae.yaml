@@ -21,6 +21,10 @@ accessConfig:
     type: STANDARD # optional Type 
     kubernetesGroups: # optional kubernetes groups 
       - devops-trainees # groups can be used to give permissions via RBAC 
-
+  - principalARN: arn:aws:iam::875926135141:user/zhiachc
+    type: STANDARD 
+    kubernetesGroups: 
+      - devops-tls 
 
 # eksctl create accessentry -f 03-ae.yaml
+# this should be run in workstation
