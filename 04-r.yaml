@@ -5,5 +5,5 @@ metadata:
   name: devops-tls # like roboshop admin 
 rules:
 - apiGroups: ["*"]
-  resource: ["*"]
+  resources: ["*"]
   verbs: ["*"]
