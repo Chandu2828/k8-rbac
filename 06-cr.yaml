@@ -7,7 +7,7 @@ rules:
   resources: ["nodes"]
   verbs: ["get", "watch", "list"]
 - apiGroups: [""]
-  resources: ["presistentvolumes"]
+  resources: ["persistentvolumes"]
   verbs: ["get", "watch", "list"]
 - apiGroups: ["storage.k8s.io"]
   resources: ["storageclasses"]
